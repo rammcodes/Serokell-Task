@@ -1,0 +1,319 @@
+.header {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 1000;
+
+  @include respond(tab-port) {
+    width: calc(100% - 2rem);
+    top: 1rem;
+  }
+
+  @include respond(phone) {
+    padding: 2.3rem 0;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    @include respond(tab-port) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__logo-container {
+    width: 12rem;
+  }
+  &__logo {
+    width: 100%;
+  }
+  &__links {
+    display: flex;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &__link {
+    padding: 3rem 3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #eee;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+  }
+}
+
+.hero {
+  color: #fff;
+  background: linear-gradient(to right, rgba(#000, 0.6), rgba(#000, 0.6)),
+    url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100vh;
+  position: relative;
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90rem;
+    width: 95%;
+  }
+
+  &__heading-primary {
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  &__text-primary {
+    color: #eee;
+    font-size: 2rem;
+    text-align: center;
+    width: 100% !important;
+  }
+  &__info {
+    margin: 3rem auto 0 auto;
+    max-width: 80rem;
+  }
+  &__cta {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  &__btn {
+    background: #fff;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1.5rem 8rem;
+    display: inline-block;
+    font-size: 2rem;
+    border-radius: 0px;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.5);
+    font-family: 'Overpass', sans-serif;
+  }
+}
+
+.heading-sec {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Overpass', sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+
+  &--lt {
+      color: #fff;
+  }
+}
+
+.main-container {
+  max-width: 120rem;
+  margin: auto;
+  width: 90%;
+}
+
+.work {
+  padding: 10rem 0;
+  &__content {
+    margin-top: 8rem;
+  }
+
+  &__full {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-gap: 5rem;
+    margin-bottom: 5rem;
+    &--inverse {
+      grid-template-columns: 1fr 1.2fr;
+    }
+    &-img-cont {
+      overflow: hidden;
+      &--inverse {
+        order: 2;
+      }
+    }
+    &-img {
+      width: 110%;
+      transform: translateX(-10%);
+      display: block;
+      object-fit: cover;
+      &--inverse {
+        transform: translateX(0);
+      }
+    }
+    &-content {
+      padding: 3rem 5%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      &--inverse {
+        text-align: right;
+      }
+      &-title {
+        font-family: 'Overpass', sans-serif;
+        font-weight: 600;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+      }
+      &-desc {
+        font-size: 1.8rem;
+        color: grey;
+        max-width: 60rem;
+        &--inverse {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    margin-bottom: 5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-img-cont {
+      overflow: hidden;
+      &--inverse {
+        order: -1;
+      }
+    }
+    &-img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    &-content {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      &-title {
+        font-family: 'Overpass', sans-serif;
+        font-weight: 600;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+      }
+      &-desc {
+        font-size: 1.8rem;
+        color: grey;
+        max-width: 60rem;
+      }
+    }
+  }
+}
+
+
+.contact {
+    padding: 8rem 0;
+    background: linear-gradient(
+        to right,
+        rgba(#000, 0.7),
+        rgba(#000, 0.7)
+      ),
+      url('https://images.unsplash.com/photo-1572480458626-97293402cc46?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
+    background-size: cover;
+    background-position: center;
+    
+    @include respond(tab-port) {
+      padding: 5rem 0;
+    }
+   
+    &__form-container {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background: rgba(#fff, 0.2);
+      padding: 5rem;
+      margin-top: 6rem;
+      max-width: 80rem;
+      text-align: right;
+      
+      margin: 5rem auto 0 auto ;
+      @include respond(phone) {
+        padding: 3rem 2rem;
+      }
+    }
+    &__form-field {
+      margin-bottom: 3rem;
+    }
+    &__form-input {
+        color: #fff;
+      padding: 2rem;
+      width: 100%;
+      border: 0px solid #fff;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      background: rgba(#fff, 0.1);
+  
+     /* Code for Modern Browsers */
+&::placeholder { 
+    color: #eee;
+    font-size: 1.6rem;
+}
+
+/* Code for WebKit, Blink, Edge */
+&::-webkit-input-placeholder { 
+    color: #eee;
+    font-size: 1.6rem;
+}
+    
+/* Code for Internet Explorer 10-11 */
+&:-ms-input-placeholder { 
+    color: #eee;
+    font-size: 1.6rem;
+}
+    
+/* Code for Microsoft Edge */
+&::-ms-input-placeholder { 
+    color: #eee;
+    font-size: 1.6rem;
+}
+    
+/* Code for Mozilla Firefox 4 to 18 */
+&:-moz-placeholder { 
+    opacity: 1;        
+    color: #eee;
+    font-size: 1.6rem;
+}
+    
+/* Code for Mozilla Firefox 19+ */
+&::-moz-placeholder { 
+    opacity: 1;
+    color: #eee;
+    font-size: 1.6rem;
+}
+
+    }
+    &__btn {
+        width: 30%;
+      border: none;
+      background: #eee;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 2rem 4rem;
+      display: inline-block;
+      font-size: 1.6rem;
+      border-radius: 0px;
+      box-shadow: 0 10px 100px rgba(0, 0, 0, 0.5);
+      font-family: 'Overpass', sans-serif;
+    }
+  }
