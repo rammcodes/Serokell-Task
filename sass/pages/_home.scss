@@ -68,8 +68,8 @@
     font-family: 'Overpass', sans-serif;
     letter-spacing: 3px;
     text-align: center;
-    @include respond(phone) { 
-        font-size: 4.5rem;
+    @include respond(phone) {
+      font-size: 4.5rem;
     }
   }
 
@@ -79,8 +79,8 @@
     text-align: center;
     width: 100%;
 
-    @include respond(phone) { 
-font-size: 1.8rem;
+    @include respond(phone) {
+      font-size: 1.8rem;
     }
   }
   &__info {
@@ -190,11 +190,19 @@ font-size: 1.8rem;
         font-size: 2.8rem;
         text-transform: uppercase;
         margin-bottom: 2rem;
+
+        @include respond(phone) {
+          font-size: 2.4rem;
+        }
       }
       &-desc {
         font-size: 1.8rem;
         color: grey;
         max-width: 60rem;
+        line-height: 1.7;
+        @include respond(phone) {
+          font-size: 1.7rem;
+        }
         &--inverse {
           margin-left: auto;
         }
@@ -249,11 +257,18 @@ font-size: 1.8rem;
         font-size: 2.8rem;
         text-transform: uppercase;
         margin-bottom: 2rem;
+        @include respond(phone) {
+            font-size: 2.4rem;
+          }
       }
       &-desc {
         font-size: 1.8rem;
         color: grey;
         max-width: 60rem;
+        line-height: 1.7;
+        @include respond(phone) {
+          font-size: 1.7rem;
+        }
       }
     }
   }
@@ -344,8 +359,8 @@ font-size: 1.8rem;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
     font-family: 'Overpass', sans-serif;
 
-    @include respond(phone) { 
-        width: 100%;
+    @include respond(phone) {
+      width: 100%;
     }
   }
 }
