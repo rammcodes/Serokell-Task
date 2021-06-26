@@ -1,0 +1,30 @@
+.heading-primary {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Overpass', sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+  @include respond(phone) {
+    font-size: 4.5rem;
+  }
+}
+
+.heading-sec {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Overpass', sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+
+  &--lt {
+    color: #fff;
+  }
+}
+
+.main-container {
+  max-width: 120rem;
+  margin: auto;
+  width: 95%;
+}

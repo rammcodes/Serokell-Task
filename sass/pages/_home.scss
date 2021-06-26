@@ -33,7 +33,7 @@
     color: #eee;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-family: 'Overpass', sans-serif;
+    @include secondaryFont;
     font-weight: 600;
   }
 
@@ -87,7 +87,7 @@
 .hero {
   color: #fff;
   background: linear-gradient(to right, rgba(#000, 0.6), rgba(#000, 0.6)),
-    url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');
+    url('../../assets/hero-bg.jpeg');
   background-size: cover;
   background-position: center;
 
@@ -101,18 +101,6 @@
     transform: translate(-50%, -50%);
     max-width: 90rem;
     width: 95%;
-  }
-
-  &__heading-primary {
-    font-size: 5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: 'Overpass', sans-serif;
-    letter-spacing: 3px;
-    text-align: center;
-    @include respond(phone) {
-      font-size: 4.5rem;
-    }
   }
 
   &__text-primary {
@@ -144,27 +132,8 @@
     font-size: 2rem;
     border-radius: 0px;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.5);
-    font-family: 'Overpass', sans-serif;
+    @include secondaryFont;
   }
-}
-
-.heading-sec {
-  font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: 'Overpass', sans-serif;
-  letter-spacing: 3px;
-  text-align: center;
-
-  &--lt {
-    color: #fff;
-  }
-}
-
-.main-container {
-  max-width: 120rem;
-  margin: auto;
-  width: 95%;
 }
 
 .work {
@@ -227,7 +196,7 @@
         text-align: right;
       }
       &-title {
-        font-family: 'Overpass', sans-serif;
+        @include secondaryFont;
         font-weight: 600;
         font-size: 2.8rem;
         text-transform: uppercase;
@@ -294,7 +263,7 @@
         padding: 0 5%;
       }
       &-title {
-        font-family: 'Overpass', sans-serif;
+        @include secondaryFont;
         font-weight: 600;
         font-size: 2.8rem;
         text-transform: uppercase;
@@ -319,7 +288,7 @@
 .contact {
   padding: 8rem 0;
   background: linear-gradient(to right, rgba(#000, 0.7), rgba(#000, 0.7)),
-    url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');
+    url('../../assets/hero-bg.jpeg');
   background-size: cover;
   background-position: center;
 
@@ -399,7 +368,7 @@
     font-size: 1.6rem;
     border-radius: 0px;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
-    font-family: 'Overpass', sans-serif;
+    @include secondaryFont;
 
     @include respond(phone) {
       width: 100%;

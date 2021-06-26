@@ -130,7 +130,7 @@ textarea {
 
 .hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/hero-bg.jpeg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -142,16 +142,6 @@ textarea {
     transform: translate(-50%, -50%);
     max-width: 90rem;
     width: 95%; }
-  .hero__heading-primary {
-    font-size: 5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: 'Overpass', sans-serif;
-    letter-spacing: 3px;
-    text-align: center; }
-    @media only screen and (max-width: 37.5em) {
-      .hero__heading-primary {
-        font-size: 4.5rem; } }
   .hero__text-primary {
     color: #eee;
     font-size: 2rem;
@@ -177,21 +167,6 @@ textarea {
     border-radius: 0px;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.5);
     font-family: 'Overpass', sans-serif; }
-
-.heading-sec {
-  font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: 'Overpass', sans-serif;
-  letter-spacing: 3px;
-  text-align: center; }
-  .heading-sec--lt {
-    color: #fff; }
-
-.main-container {
-  max-width: 120rem;
-  margin: auto;
-  width: 95%; }
 
 .work {
   padding: 10rem 0; }
@@ -314,7 +289,7 @@ textarea {
 
 .contact {
   padding: 8rem 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/hero-bg.jpeg");
   background-size: cover;
   background-position: center; }
   .contact__form-container {
@@ -458,3 +433,29 @@ textarea {
     @media only screen and (max-width: 56.25em) {
       .main-footer__lower {
         padding: 3rem 1rem; } }
+
+.heading-primary {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Overpass', sans-serif;
+  letter-spacing: 3px;
+  text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 4.5rem; } }
+
+.heading-sec {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Overpass', sans-serif;
+  letter-spacing: 3px;
+  text-align: center; }
+  .heading-sec--lt {
+    color: #fff; }
+
+.main-container {
+  max-width: 120rem;
+  margin: auto;
+  width: 95%; }
