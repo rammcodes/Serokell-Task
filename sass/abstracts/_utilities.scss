@@ -1,7 +1,6 @@
 .heading-primary {
   font-size: 5rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
   font-family: 'Overpass', sans-serif;
   letter-spacing: 3px;
   text-align: center;
@@ -27,4 +26,16 @@
   max-width: 120rem;
   margin: auto;
   width: 95%;
+}
+
+.btn {
+  background: #fff;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1.5rem 8rem;
+  display: inline-block;
+  font-size: 2rem;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  @include secondaryFont;
 }
