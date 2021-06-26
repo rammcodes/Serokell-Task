@@ -41,7 +41,7 @@
     display: none;
     width: 3rem;
 
-    padding: 2rem 0;
+    padding: 2.5rem 0;
 
     @include respond(phone) {
       display: block;
@@ -49,6 +49,38 @@
   }
   &__main-ham-menu {
     width: 100%;
+  }
+
+  &__sm-menu {
+    background: #111;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    &--active {
+      display: none;
+      @include respond(phone) {
+        display: block;
+      }
+    }
+  }
+  &__sm-menu-link {
+    padding: 2.5rem 3rem;
+    font-size: 1.6rem;
+    color: #eee;
+    text-align: right;
+    border-bottom: 1px solid #444;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    &:last-child {
+      border: none;
+    }
+  }
+  &__sm-menu-link-last {
+    border-bottom: 0;
   }
 }
 
