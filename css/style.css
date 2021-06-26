@@ -439,9 +439,6 @@ textarea {
             text-align: left; } }
       .main-footer__nav-item-link:last-child {
         margin-bottom: 0; }
-  .main-footer__icon {
-    margin-right: 0.5rem;
-    width: 2.5rem; }
   .main-footer__lower {
     padding: 4rem 0;
     border-top: 1px solid #444;
