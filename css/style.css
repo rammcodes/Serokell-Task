@@ -102,7 +102,7 @@ textarea {
   .header__main-ham-menu {
     width: 100%; }
   .header__sm-menu {
-    background: #111;
+    background: #000;
     position: absolute;
     width: 100%;
     top: 100%;
