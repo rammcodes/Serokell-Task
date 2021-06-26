@@ -4,10 +4,6 @@
   z-index: 1000;
   background: #000;
 
-  @include respond(phone) {
-    padding: 2.3rem 0;
-  }
-
   &__content {
     display: flex;
     align-items: center;
@@ -39,6 +35,20 @@
     letter-spacing: 3px;
     font-family: 'Overpass', sans-serif;
     font-weight: 600;
+  }
+
+  &__main-ham-menu-cont {
+    display: none;
+    width: 3rem;
+
+    padding: 2rem 0;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+  &__main-ham-menu {
+    width: 100%;
   }
 }
 
@@ -258,8 +268,8 @@
         text-transform: uppercase;
         margin-bottom: 2rem;
         @include respond(phone) {
-            font-size: 2.4rem;
-          }
+          font-size: 2.4rem;
+        }
       }
       &-desc {
         font-size: 1.8rem;
@@ -457,7 +467,7 @@
     font-size: 1.2rem;
     text-align: center;
     @include respond(tab-port) {
-      padding: 2rem 0;
+      padding: 3rem 1rem;
     }
   }
 }

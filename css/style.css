@@ -66,9 +66,6 @@ textarea {
   width: 100%;
   z-index: 1000;
   background: #000; }
-  @media only screen and (max-width: 37.5em) {
-    .header {
-      padding: 2.3rem 0; } }
   .header__content {
     display: flex;
     align-items: center;
@@ -95,6 +92,15 @@ textarea {
     letter-spacing: 3px;
     font-family: 'Overpass', sans-serif;
     font-weight: 600; }
+  .header__main-ham-menu-cont {
+    display: none;
+    width: 3rem;
+    padding: 2rem 0; }
+    @media only screen and (max-width: 37.5em) {
+      .header__main-ham-menu-cont {
+        display: block; } }
+  .header__main-ham-menu {
+    width: 100%; }
 
 .hero {
   color: #fff;
@@ -296,7 +302,7 @@ textarea {
     margin: 5rem auto 0 auto; }
     @media only screen and (max-width: 37.5em) {
       .contact__form-container {
-        padding: 3rem 2rem; } }
+        padding: 3rem; } }
   .contact__form-field {
     margin-bottom: 3rem; }
   .contact__form-input {
@@ -425,4 +431,4 @@ textarea {
     text-align: center; }
     @media only screen and (max-width: 56.25em) {
       .main-footer__lower {
-        padding: 2rem 0; } }
+        padding: 3rem 1rem; } }
