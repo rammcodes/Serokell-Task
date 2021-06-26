@@ -58,7 +58,7 @@
     top: 100%;
     display: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    
+
     &--active {
       display: none;
       @include respond(phone) {
@@ -121,8 +121,6 @@
     margin-top: 5rem;
     text-align: center;
   }
-
-  
 }
 
 .work {
@@ -349,7 +347,7 @@
     width: 30%;
     background: #000;
     color: #fff;
-   
+
     padding: 2rem 4rem;
     font-size: 1.6rem;
 
