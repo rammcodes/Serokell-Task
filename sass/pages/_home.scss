@@ -292,7 +292,7 @@
 
     margin: 5rem auto 0 auto;
     @include respond(phone) {
-      padding: 3rem 2rem;
+      padding: 3rem;
     }
   }
   &__form-field {
